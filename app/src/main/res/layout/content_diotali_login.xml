@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_achat"
+    tools:context=".DiotaliLogin">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/img_contravention"
+            android:layout_width="206dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="170dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/app_name"
+            android:cropToPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/dgid_logo_big" />
+
+
+        <TextView
+            android:id="@+id/txt_v_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/dimen_text_size_normal"
+            android:hint=""
+            android:textColor="@color/colorRed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_contravention" />
+
+        <EditText
+            android:id="@+id/edt_login"
+            android:layout_width="@dimen/dimen_tf_login_width"
+            android:layout_height="@dimen/dimen_tf_login_height"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_background2"
+            android:ems="20"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/login"
+            android:inputType="text"
+            android:textSize="@dimen/dimen_text_size_normal_login"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_v_error" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="@dimen/dimen_tf_login_width"
+            android:layout_height="@dimen/dimen_tf_login_height"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edt_background2"
+            android:ems="20"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/dimen_text_size_normal_login"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_login" />
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="@dimen/dimen_tf_login_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_background"
+            android:text="@string/connecter"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <TextView
+            android:id="@+id/txt_pwd_oublie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Mot de passe oublié ?"
+            android:textColor="#755427"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
